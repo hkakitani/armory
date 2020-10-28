@@ -9,12 +9,12 @@ ENV LD_LIBRARY_PATH="${LD_LIBRARY_PATH}:/usr/local/cuda/lib64"
 RUN /opt/conda/bin/conda install -c conda-forge librosa 
 RUN /opt/conda/bin/pip install hydra-core==1.0.0rc1 \
   python-levenshtein \
-  torchaudio \
+  torchaudio==0.4.0 \
   numba==0.43.0 \
   --ignore-installed llvmlite==0.32.1 \
   soundfile \
   sox \
-  warpctc-pytorch==0.2.1+torch16.cuda100
+  warpctc-pytorch==0.2.1+torch14.cuda100
 
 ########## PyTorch 1 Deep Speech Release #################
 
